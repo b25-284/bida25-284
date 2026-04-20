@@ -15,10 +15,71 @@
     <!--Navigation-->
     <nav> 
         
-            <a href="home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="products.html">Products</a>
             <a href="categories and lists.html">Categories and Lists</a>
             <a href="order.html">Order</a>
-            <a href="contact us.html">Contact</a>
+            <a href="contact and feedback.html">Contact & Feedback</a>
     
     </nav> 
+
+</body>
+    <section>
+        <h2>Order</h2>
+        <p>Ready to make a purchase? Below is a list of all the items you have added to your cart. Please review your order and proceed to checkout when you're ready.</p>
+    </section>
+
+    <section>
+        <h3>Your Order</h3>
+        <ul>
+            <li>Product 1: African Print Dress</li>
+            <li>Product 2: Ankara Headwrap</li>
+            <li>Product 3: Kente Cloth Scarf</li>
+        </ul>
+    </section>
+
+    <section>
+        <h3>Checkout</h3>
+        <p>To complete your purchase, please proceed below where you can enter your delivery and payment information. We look forward to delivering your unique and vibrant African print fashion pieces to your doorstep!</p>
+    </section>
+
+    <section>
+        <h3>Payment Information</h3>
+        <p>Please enter your payment details to complete your order. We accept various payment methods for your convenience.</p>
+    </section>
+
+    <section>
+        <h2>Order Form</h2>
+        <form action="submit_order.html" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="address">Delivery Address:</label><br>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="payment">Payment Method:</label><br>
+            <select id="payment" name="payment" required>
+                <option value="">Select a payment method</option>
+                <option value="credit_card">Credit Card</option>
+                <option value="paypal">Cash On Delivery</option>
+                <option value="bank_transfer">Bank Transfer</option>
+            </select><br><br>
+
+            <input type="submit" value="Submit Order">
+    </section>
+
+    <section>
+        <h3>Thank You</h3>
+        <p>Thank you for shopping with Unearthed!</p>
+    </section>
+
+    <footer> 
+
+        <p>2026 Unearthed</p> 
+
+    </footer>
+
+</html> 

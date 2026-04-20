@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Unearthed</title> 
+</head> 
+
+<body> 
+
+    <header> 
+        <h1>Unearthed</h1> 
+    </header> 
+
+    <!--Navigation-->
+    <nav> 
+        
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="categories and lists.html">Categories and Lists</a>
+            <a href="order.html">Order</a>
+            <a href="contact and feedback.html">Contact & Feedback</a>
+    
+    </nav> 
+
+    <section>
+        <h2>Contact & Feedback</h2>
+        <p>We value your feedback and are here to assist you with any questions or concerns. Please feel free to reach out to us through our contact details below. Your input helps us improve our products and services, so we appreciate your time and effort in sharing your thoughts with us.</p>
+    </section>
+
+    <section>
+        <h3>Rate our website</h3>
+        <p>Please rate your experience with our website:</p>
+        <form action="submit_rating.html" method="post">
+            <label for="rating">Rating (1-5):</label><br>
+            <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+            <input type="submit" value="Submit Rating">
+        </form>
+
+        <h3>Feedback Form</h3>
+        <form action="submit_feedback.html" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <h3>Thank You</h3>
+        <p>Thank you for your feedback! We appreciate your input and will use it to improve our products and services.</p>
+
+    </section>
+
+    <section>
+        <h3>Our Contact Information</h3>
+        <p>If you have any questions , please feel free to contact us using the information below:</p>
+        <ul>
+            <li><strong>Phone:</strong> +267 71 234 567</li>
+            <li><strong>Email:</strong> info@unearthed.com</li>
+            <li><strong>Address:</strong> 123 Fairgrounds, Gabororne, Botswana</li>
+        </ul>
+    </section>
+
+</body>
+
+    <footer> 
+
+        <p> 2026 Unearthed</p> 
+
+    </footer>
+
+</html> 
