@@ -1,0 +1,102 @@
+* {
+    margin: 5px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+     font-family: 'Montserrat', sans-serif;
+     margin: 0px;
+     padding: 0px;
+     border : 1px Solid #EODCC8;
+     background-color: #FAF9F6;
+    border-bottom: #EODCC8 1px solid;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+main {
+    flex: 1;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    margin: 0px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    h1 { font-family: 'Allura', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 2px;}
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  /*The Box Shadow property adds a shadow effect to the header, giving it a more dynamic and visually appealing look. The values specify the horizontal offset, vertical offset, blur radius, and color of the shadow.*/
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff6347;
+    opacity: 0.7;
+}
+
+
+nav {
+  background: #fffff0;
+  padding: 10px 0;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  position: sticky;
+    top: 0;
+    z-index : 999;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif  ;
+  color: #333;
+  font-weight: bolder;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}       
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background: red;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #ff6347;
+    }
