@@ -1,5 +1,5 @@
 * {
-    margin: 5px;
+        margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -10,7 +10,7 @@ body {
      padding: 0px;
      border : 1px Solid #EODCC8;
      background-color: #FAF9F6;
-    border-bottom: #EODCC8 1px solid;
+    border-bottom: 1px solid #EODCC8;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -29,12 +29,12 @@ video {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 40px 20px;
-    margin-top: 20px;
     margin: 0px;
 }
 
@@ -44,18 +44,20 @@ img {
 }
 
 header {
-    h1 { font-family: 'Allura', cursive;
-    font-size: 3rem;
-    font-weight: 400;
-    letter-spacing: 2px;}
-  background: #333;
+    background: #333;
   color: white;
   text-align: center;
   padding: 50px 20px;
-  /*The Box Shadow property adds a shadow effect to the header, giving it a more dynamic and visually appealing look. The values specify the horizontal offset, vertical offset, blur radius, and color of the shadow.*/
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   
 }
+
+header h1 {
+    font-family: 'Allura', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 2px;}
+
 
 a:hover {
     text-decoration: none;
@@ -73,6 +75,11 @@ nav {
   position: sticky;
     top: 0;
     z-index : 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
 }
 
 nav a {
@@ -83,20 +90,382 @@ nav a {
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }       
-/* Buttons */
-.btn {
+
+.brand-intro {
+  background: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.brand-intro h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.brand-intro p {
+  font-size: 18px;
+  color: #555;
+}           
+
+.intro-link {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 20px;
   padding: 12px 20px;
-  background: red;
+  background: #ff4500;
   color: white;
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
   border-radius: 5px;
-  transition: 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
-.btn:hover {
-    background: #ff6347;
-    }
+.products-preview {
+  background-color: #f5f3ee; /* soft beige */
+  padding: 60px 20px;
+}
+
+.products-preview h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #1e1e1e;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #ffffff;
+  padding: 28px;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card h3 {
+  margin-bottom: 10px;
+  color: #1e1e1e;
+  font-size: 1.2rem;
+}
+
+.product-card p {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.products-intro {
+  background-color: #f5f3ee; /* soft beige */
+  text-align: center;
+   padding: 60px 20px;  
+}
+.products-intro h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1e1e1e;
+}           
+
+.products-intro p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.category-list {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.category-list li a {
+  display: block;
+  background-color: #ffffff;
+  padding: 18px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 600;
+  color: #1e1e1e;
+  border: 1px solid #ddd;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-list li a:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+}
+
+.product-section {
+  padding: 40px 20px;     
+  margin: 50px auto;  
+  margin-bottom: 15px;  
+  border-top: 1px solid #ccc;  
+  max-width: 900px;
+}
+
+.item-options {
+  margin-bottom: 40px;
+}
+
+.price {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+select {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 12px 20px;
+  background-color: #ff4500; /* brand orange */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #e03e00;
+}
+
+.shop-now {
+  display: inline-block;
+  margin : 20px auto;
+  margin-left: 20px;
+  margin-right:20px;
+  padding: 12px 20px;
+    background-color: #e03e00;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+
+.shop-now:hover {
+  background-color: #ff4500;
+}
+
+/*--ORDER PAGE SECTIONS --- */
+
+section {
+    width: 100%;
+  max-width: 1020px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fffdf8;
+  border: 1px solid #E0DCC8;
+  border-radius: 8px;
+}
+
+/* Main page heading */
+section h2 {
+  font-size: 32px;
+  margin-bottom: 12px;
+  color: #1e1e1e;
+}
+
+
+section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+/* Paragraph text */
+section p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* Order list */
+section ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+section ul li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+}
+
+/*-- Order form--*/
+
+form {
+  margin-top: 20px;
+}
+
+/* Labels */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+
+}
+
+  
+/* --CATEGORIES & LISTS –-*/
+
+/* Categories container */
+.categories {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Product sections as clear cards */
+.product-section {
+  background-color: #fffdf8;
+  border: 1px solid #E0DCC8;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 60px;
+}
+
+/* Product images centered and consistent */
+.product-section img {
+  display: block;
+  max-width: 520px;
+  width: 100%;
+  margin: 25px auto 10px auto;
+  border-radius: 6px;
+}
+
+/* Options box under each image */
+.item-options {
+  max-width: 520px;
+  margin: 0 auto 40px auto;
+  padding: 15px;
+  background-color: #f5f3ee;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.item-options label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+.item-options input,
+.item-options select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* -- CONTACT & FEEDBACK PAGE -- */
+
+section {
+  width: 100%;
+  max-width: 1020px;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fffdf8;
+  border: 1px solid #E0DCC8;
+  border-radius: 8px;
+}
+
+
+section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #1e1e1e;
+}
+
+
+section h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1e1e1e;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 6px;
+}
+
+/* Paragraph text */
+section p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+/* -- FEEDBACK FORM -- */
+
+form {
+  margin-top: 20px;
+}
+
+/* Labels */
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* Inputs, select, textarea */
+form input,
+form textarea,
+form select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 18px;
+}
+
+/* Textarea behaviour */
+form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+
+form button,
+form input[type="submit"] {
+  margin-top: 10px;
+}
+
+
+section strong {
+  color: #1e1e1e;
+}
+
+/* Thank you section in theh middle of the page */
+section:last-of-type {
+  text-align: center;
+}

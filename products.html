@@ -4,16 +4,22 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Unearthed</title> 
+    <link rel="stylesheet" href="style.css">
 </head> 
 
 <body> 
 
-    <header> 
-        <h1>Unearthed</h1> 
+     <header class="hero-header"> 
+        <div class="overlay">
+            <h1 class="brand-name">Unearthed</h1>
+            <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        </div>  
     </header> 
 
     <!--Navigation-->
-    <nav> 
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav mx-auto">
+
         
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
@@ -24,30 +30,61 @@
     </nav> 
     <main>
     <section>
-        <h2>Our Products</h2>
-        <p>Explore our vibrant collection of African print fashion, where culture meets style. Each piece tells a story, supporting local craftsmanship and preserving heritage. Join us in celebrating African fashion with unique and sustainable designs that empower self-expression.</p>
-    </section>
+        <section class="products-intro">
+  <h1>Our Products</h1>
+
+  <p>
+    Explore our vibrant collection of African print fashion, where culture
+    meets style. Each piece tells a story, supporting local craftsmanship
+    and preserving heritage. Join us in celebrating African fashion with
+    unique and sustainable designs that empower self-expression.
+  </p>
+</section>
 
     <section>
-        <h3>Featured Products</h3>
-        <ul>
-            <li>Dresses</li>
-            <li>Accessories</li>
-            <li>Scarves</li>
-            <li>Headwraps</li>
-        </ul>
-    </section>
+        <section class="products-preview">
+  <h2>Featured Categories</h2>
 
-    <section>
-        <h3>Shop Now</h3>
-        <p>Discover our full range of products and find your perfect piece to express your unique style. <a href="categories and lists.html">Browse Categories and Lists</a> to explore more!</p>
-    </section>
-    
+  <div class="product-cards">
+
+    <a href="categories and lists.html#dresses" class="product-card">
+      <h3>Dresses</h3>
+      <p>Elegant African print dresses for every occasion.</p>
+    </a>
+
+    <a href="categories and lists.html#shirts" class="product-card">
+      <h3>Shirts</h3>
+      <p>Bold prints blended with modern tailoring.</p>
+    </a>
+
+    <a href="categories and lists.html#trousers" class="product-card">
+      <h3>Trousers</h3>
+      <p>Comfortable, stylish trousers with cultural flair.</p>
+    </a>
+
+    <a href="categories and lists.html#headwraps" class="product-card">
+      <h3>Headwraps</h3>
+      <p>Finish your look with vibrant statement pieces.</p>
+    </a>
+
+  </div>
+</section>
+
+    <section class="shop-now">
+  <h2>Shop Now</h2>
+
+  <p>
+    Discover our full range of products and find your perfect piece to
+    express your unique style.
+  </p>
+
+  <a href="categories and lists.html" class="intro-link">Browse Categories and Lists</a>
+</section>
 </main>
 </body> 
 <footer> 
 
-        <p> 2026 Unearthed</p> 
+        <p> @2026 Unearthed</p> 
 
     </footer>
 

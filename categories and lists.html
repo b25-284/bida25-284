@@ -4,16 +4,22 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Unearthed</title> 
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head> 
 
 <body> 
 
-    <header> 
-        <h1>Unearthed</h1> 
+    <header class="hero-header"> 
+        <div class="overlay">
+            <h1 class="brand-name">Unearthed</h1>
+            <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        </div>  
     </header> 
-
     <!--Navigation-->
-    <nav> 
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav mx-auto">
+
         
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
@@ -23,27 +29,445 @@
     
     </nav> 
 
-    <section>
-        <h2>Categories and Lists</h2>
+    <section class="brand-intro">
+        <h2>Lists</h2>
         <p>Explore our diverse categories and curated lists to find the perfect African print fashion pieces that resonate with your style. From vibrant dresses to stylish accessories, our collections are designed to celebrate culture and empower self-expression. Browse through our categories and discover unique items that tell a story of craftsmanship and heritage.</p>
     </section>
 
-    <section>
-        <h3>Categories</h3>
-        <ul>
-            <li>Dresses</li>
-            <li>Accessories</li>
-            <li>Headwraps</li>
-            <li>Scarves</li>
-        </ul>
-    </section>
+    <section class="categories">
+  <h2>Categories</h2>
 
+  <section id="dresses" class="product-section">
+  <h3>Dresses</h3>
+  <p>Elegant African print dresses designed for comfort, beauty, and confidence.</p>
+  <img src="pexels-alpha-paul-696966661-18853856.jpg" alt="African print dresses" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P450</p>
+
+  <label>
+    Size:
+    <select id="dress1-size">
+      <option value="XS">Extra Small</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+    </select>
+  </label>
+
+  <button onclick="addToOrder('African Print Dress', 450.65, 'dress1-size')">
+    Buy Now
+  </button>
+</div>
+  <img src="pexels-alpha-paul-696966661-18853893.jpg" alt="African print dresses" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P400.65</p>
+
+  <label>
+    Size:
+    <select id="dress2-size">
+      <option value="XS">Extra Small</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+    </select>
+  </label>
+
+  <button onclick="addToOrder('African Print Dress', 400.65, 'dress2-size')">
+    Buy Now
+  </button>
+</div>
+  <img src="pexels-alpha-paul-696966661-18853854.jpg" alt="African print dresses" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P400.65</p>
+
+  <label>
+    Size:
+    <select id="dress3-size">
+      <option value="XS">Extra Small</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+    </select>
+  </label>
+
+  <button onclick="addToOrder('African Print Dress', 365.65, 'dress3-size')">
+    Buy Now
+  </button>
+</div>
+
+
+  <img src="pexels-alpha-paul-696966661-18367068.jpg" alt="African print dresses" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P365.65</p>
+
+  <label>
+    Size:
+    <select id="dress4-size">
+      <option value="XS">Extra Small</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+    </select>
+  </label>
+
+  <button onclick="addToOrder('African Print Dress', 365.65, 'dress4-size')">
+    Buy Now
+  </button>
+</div>
+
+</section>
+
+<section id="shirts" class="product-section">
+  <h3>Shirts</h3>
+  <p>Stylish African print shirts blending tradition with modern fashion.</p>
+
+
+
+  <img src="pexels-ali-drabo-10956272-16941803.jpg" alt="African print shirts" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P249.99</p>
+
+  <label>
+    Size:
+    <select id="shirt1-size">
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">Extra Large</option>
+    </select>
+  </label>
+
+  <label>
+    Quantity:
+    <input type="number" id="shirt1-qty" min="1" max="5" value="1">
+  </label>
+
+  <button onclick="addToOrder(
+    'African Print Shirt',
+    249.99,
+    'shirt1-size',
+    'shirt1-qty'
+  )">
+    Buy Now
+  </button>
+</div>
+  <img src="pexels-oluseyi-18028396.jpg" alt="African print shirts" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P249.99</p>
+
+  <label>
+    Size:
+    <select id="shirt2-size">
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">Extra Large</option>
+    </select>
+  </label>
+
+  <label>
+    Quantity:
+    <input type="number" id="shirt2-qty" min="1" max="5" value="1">
+  </label>
+
+  <button onclick="addToOrder(
+    'African Print Shirt',
+    249.99,
+    'shirt2-size',
+    'shirt2-qty'
+  )">
+    Buy Now
+  </button>
+</div>
+  <img src="pexels-emmanuel-abbey-947611159-20106345.jpg" alt="African print shirts" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P249.99</p>
+
+  <label>
+    Size:
+    <select id="shirt3-size">
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">Extra Large</option>
+    </select>
+  </label>
+
+  <label>
+    Quantity:
+    <input type="number" id="shirt3-qty" min="1" max="5" value="1">
+  </label>
+
+  <button onclick="addToOrder(
+    'African Print Shirt',
+    249.99,
+    'shirt3-size',
+    'shirt3-qty'
+  )">
+    Buy Now
+  </button>
+</div>
+
+
+
+    <img src="pexels-thirdman-6109344.jpg" alt="African print shirts" width="100%" height="auto">
+    <div class="item-options">
+  <p class="price">Price: P249.99</p>
+
+  <label>
+    Size:
+    <select id="shirt4-size">
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">Extra Large</option>
+    </select>
+  </label>
+
+  <label>
+    Quantity:
+    <input type="number" id="shirt4-qty" min="1" max="5" value="1">
+  </label>
+
+  <button onclick="addToOrder(
+    'African Print Shirt',
+    249.99,
+    'shirt4-size',
+    'shirt4-qty'
+  )">
+    Buy Now
+  </button>
+</div>
+
+
+    <img src="pexels-derek-paul-896407863-21429940.jpg" alt="African print shirts" width="100%" height="auto">
+    <div class="item-options">
+  <p class="price">Price: P249.99</p>
+
+  <label>
+    Size:
+    <select id="shirt5-size">
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+      <option value="XL">Extra Large</option>
+    </select>
+  </label>
+
+  <label>
+    Quantity:
+    <input type="number" id="shirt5-qty" min="1" max="5" value="1">
+  </label>
+
+  <button onclick="addToOrder(
+    'African Print Shirt',
+    249.99,
+    'shirt5-size',
+    'shirt5-qty'
+  )">
+    Buy Now
+  </button>
+</div>
+</section>
+
+<section id="trousers" class="product-section">
+  <h3>Trousers</h3>
+  <p>Comfortable trousers with bold prints and cultural flair.</p>
+  <img src="pexels-derek-paul-896407863-21429939.jpg" alt="African print trousers" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P450</p>
+
+  <label>
+    Size:
+    <select id="trousers1-size">
+      <option value="XS">Extra Small</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+    </select>
+  </label>
+
+  <button onclick="addToOrder('African Print Trousers', 450, 'trousers1-size')">
+    Buy Now
+  </button>
+</div>
+
+
+  <img src="pexels-kema-17350032.jpg" alt="African print trousers" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P450</p>
+
+  <label>
+    Size:
+    <select id="trousers2-size">
+      <option value="XS">Extra Small</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+    </select>
+  </label>
+
+  <button onclick="addToOrder('African Print Trousers', 450, 'trousers-size')">
+    Buy Now
+  </button>
+</div>
+
+  <img src="pexels-boko-shots-812604874-19281778.jpg" alt="African print trousers" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P450</p>
+
+  <label>
+    Size:
+    <select id="trousers3-size">
+      <option value="XS">Extra Small</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+    </select>
+  </label>
+
+  <button onclick="addToOrder('African Print Trousers', 450, 'trousers3-size')">
+    Buy Now
+  </button>
+</div>
+
+  <img src="pexels-kingsley-21953184-6679538.jpg" alt="African print trousers" width="100%" height="auto">
+  <div class="item-options">
+  <p class="price">Price: P450</p>
+
+  <label>
+    Size:
+    <select id="trousers4-size">
+      <option value="XS">Extra Small</option>
+      <option value="S">Small</option>
+      <option value="M">Medium</option>
+      <option value="L">Large</option>
+    </select>
+  </label>
+
+  <button onclick="addToOrder('African Print Trousers', 450, 'trousers4-size')">
+    Buy Now
+  </button>
+</div>
+  
+</section>
+
+
+<section id="headwraps" class="product-section">
+  <h3>Headwraps</h3>
+  <p>Vibrant headwraps that complete your look and express heritage.</p>
+  <img src="pexels-achor-david-926249768-25409668.jpg" alt="African print headwraps" width="100%" height="auto">
+
+<div class="item-options">
+  <p class="price">Price: P217.99</p>
+
+  <p><strong>Length:</strong> 0.5 metres</p>
+
+  <label>
+    Quantity:
+    <input type="number"
+           id="headwrap1-qty"
+           min="1"
+           max="3"
+           value="1">
+  </label>
+
+  <button onclick="addToOrder(
+    'African Print Headwrap (0.5m)',
+    217.99,
+    null,
+    'headwrap1-qty'
+  )">
+    Buy Now
+  </button>
+</div>
+
+  <img src="pexels-antwoinette-ayers-1551665-8682505.jpg" alt="African print headwraps" width="100%" height="auto">
+
+<div class="item-options">
+  <p class="price">Price: P217.99</p>
+
+  <p><strong>Length:</strong> 0.5 metres</p>
+
+  <label>
+    Quantity:
+    <input type="number"
+           id="headwrap2-qty"
+           min="1"
+           max="3"
+           value="1">
+  </label>
+
+  <button onclick="addToOrder(
+    'African Print Headwrap (0.5m)',
+    217.99,
+    null,
+    'headwrap2-qty'
+  )">
+    Buy Now
+  </button>
+</div>
+
+
+  <img src="pexels-thekehindeogunsanya-11692341.jpg" alt="African print headwraps" width="100%" height="auto">
+ 
+<div class="item-options">
+  <p class="price">Price: P217.99</p>
+
+  <p><strong>Length:</strong> 0.5 metres</p>
+
+  <label>
+    Quantity:
+    <input type="number"
+           id="headwrap3-qty"
+           min="1"
+           max="3"
+           value="1">
+  </label>
+
+  <button onclick="addToOrder(
+    'African Print Headwrap (0.5m)',
+    217.99,
+    null,
+    'headwrap3-qty'
+  )">
+    Buy Now
+  </button>
+</div>
+
+  <img src="pexels-warshu-media-concept-2152535801-36308082.jpg" alt="African print headwraps" width="100%" height="auto">
+  
+<div class="item-options">
+  <p class="price">Price: P217.99</p>
+
+  <p><strong>Length:</strong> 0.5 metres</p>
+
+  <label>
+    Quantity:
+    <input type="number"
+           id="headwrap4-qty"
+           min="1"
+           max="3"
+           value="1">
+  </label>
+
+  <button onclick="addToOrder(
+    'African Print Headwrap (0.5m)',
+    217.99,
+    null,
+    'headwrap4-qty'
+  )">
+    Buy Now
+  </button>
+</div>
+
+</section>
 
 </body>
 
 <footer> 
 
-        <p>2026 Unearthed</p> 
+        <p>@2026 Unearthed</p> 
 
     </footer>
 

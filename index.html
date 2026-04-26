@@ -4,16 +4,24 @@
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Unearthed</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootsrap/4.5.2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head> 
 
 <body> 
 
-    <header> 
-        <h1>Unearthed</h1> 
+    <header class="hero-header"> 
+        <div class="overlay">
+            <h1 class="brand-name">Unearthed</h1>
+            <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        </div>  
     </header> 
 
     <!--Navigation-->
-    <nav> 
+    <nav class="navbar navbar-expand-sm">
+        <ul class="navbar-nav mx-auto">
+
         
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
@@ -24,21 +32,29 @@
     </nav> 
 
     <main>
+        <div class="container text-center mt-5"></div>
 
     <section>
-        <img src="https://placeheroicon.com/200/300" alt="A hero icon">
+        <video src="6193474-hd_1920_1080_30fps.mp4" type="video/mp4" controls autoplay muted loop playsinline></video>
     </section>
 
-    <section>
-        <p>Where culture meets style! 
-           Our brand celebrates African print fasshion inspired by tradition and, creativity and self-expression. Every piece tells a story - supporting local carftmanship, preserving culture and helping African fashion grow sustainably.
-           Wear your culture with pride and own your style to make a statement with our unique and vibrant designs. Join us on this journey of celebrating African heritage through fashion!
-        </p>
-    </section>
+    <section class="brand-intro">
+  <h2>Where culture meets style!</h2>
 
-    <section>
-        Browse Categories:<a href="products.html">Products</a>
-    </section>
+  <p>
+    Our brand celebrates African print fashion inspired by tradition, creativity,
+    and self expression. Every piece tells a story,supporting local craftsmanship,
+    preserving culture, and helping African fashion grow sustainably.
+  </p>
+
+  <p>
+    Wear your culture with pride and own your style to make a statement with our
+    unique and vibrant designs.
+  </p>
+
+  <a href="products.html" class="intro-link">Browse Categories</a>
+</section>
+
 
     </main>
 
@@ -46,7 +62,7 @@
 
     <footer> 
 
-        <p>2026 Unearthed</p> 
+        <p>@2026 Unearthed</p> 
 
     </footer>
 
