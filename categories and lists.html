@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Unearthed</title> 
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head> 
 
 <body> 
@@ -18,7 +17,8 @@
     </header> 
     <!--Navigation-->
     <nav class="navbar navbar-expand-sm">
-        <ul class="navbar-nav mx-auto">
+      <button id="menu-toggle" aria-label="Open menu">☰</button>
+        <ul class="navbar-nav mx-auto" id="nav-links">
 
         
             <a href="index.html">Home</a>
@@ -307,7 +307,7 @@
     </select>
   </label>
 
-  <button onclick="addToOrder('African Print Trousers', 450, 'trousers-size')">
+  <button onclick="addToOrder('African Print Trousers', 450, 'trousers2-size')">
     Buy Now
   </button>
 </div>
@@ -462,14 +462,18 @@
 </div>
 
 </section>
-
-</body>
+<script src="script.js"></script>
+<script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("nav-links").classList.toggle("open");
+    });
+</script>
 
 <footer> 
 
         <p>@2026 Unearthed</p> 
 
     </footer>
-
+</body>
 </html> 
 

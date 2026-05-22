@@ -18,7 +18,8 @@
 
     <!--Navigation-->
     <nav class="navbar navbar-expand-sm">
-        <ul class="navbar-nav mx-auto">
+        <button id="menu-toggle" aria-label="Open menu">☰</button>
+        <ul class="navbar-nav mx-auto" id="nav-links">
 
         
             <a href="index.html">Home</a>
@@ -81,6 +82,11 @@
   <a href="categories and lists.html" class="intro-link">Browse Categories and Lists</a>
 </section>
 </main>
+<script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("nav-links").classList.toggle("open");
+    });
+</script>
 </body> 
 <footer> 
 

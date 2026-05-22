@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Unearthed</title> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootsrap/4.5.2/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head> 
 
@@ -19,16 +18,15 @@
     </header> 
 
     <!--Navigation-->
-    <nav class="navbar navbar-expand-sm">
-        <ul class="navbar-nav mx-auto">
-
-        
+    <nav class="navbar">
+        <button id="menu-toggle" aria-label="Open menu">☰</button>
+        <ul class="navbar-nav" id="nav-links">
             <a href="index.html">Home</a>
             <a href="products.html">Products</a>
             <a href="categories and lists.html">Categories and Lists</a>
             <a href="order.html">Order</a>
             <a href="contact and feedback.html">Contact & Feedback</a>
-    
+        </ul>
     </nav> 
 
     <main>
@@ -57,6 +55,11 @@
 
 
     </main>
+    <script>
+    document.getElementById("menu-toggle").addEventListener("click", function () {
+        document.getElementById("nav-links").classList.toggle("open");
+    });
+</script>
 
 </body>
 
@@ -66,4 +69,4 @@
 
     </footer>
 
-</html> 
+</html>
